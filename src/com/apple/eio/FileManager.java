@@ -33,7 +33,7 @@ public class FileManager {
         return 0;
     }
     
-    public static String getPathToApplicationBuldle() {
+    public static String getPathToApplicationBundle() {
     	return null;
     }
 
