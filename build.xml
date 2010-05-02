@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+    Apache Ant build file for OrangeExtensions
+
+    Simply creates a jar file using Java 5 as the target to ensure compatibility.
+-->
+
+<project default="package_jar" name="OrangeExtensions -- pluggable jar for Apple Java Extensions, updated for Java 5/6" basedir=".">
+
+
+  <target name="package_jar" description="create project jar ready for distribution">
+    <delete dir="dist" quiet="true" failonerror="false"/>
+    <mkdir dir="dist"/>
+    <delete dir="classes" quiet="true" failonerror="false"/>
+    <mkdir dir="classes"/>
+
+    <javac target="1.5" srcdir="src" destdir="classes"/>
+
+    <jar destfile="dist/OrangeExtensions.jar" filesetmanifest="skip">
+      <manifest>
+        <attribute name="Class-Path" value="."/>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Implementation-Vendor" value="http://ymasory.github.com/OrangeExtensions/"/>
+        <attribute name="Implementation-Title" value="OrangeExtensions"/>
+      </manifest>
+    </jar>
+  </target>
+
+
+</project>
