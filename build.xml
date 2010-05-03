@@ -24,7 +24,12 @@
         <attribute name="Implementation-Vendor" value="http://ymasory.github.com/OrangeExtensions/"/>
         <attribute name="Implementation-Title" value="OrangeExtensions"/>
       </manifest>
+      <fileset dir="classes/"/>
+      <fileset dir="src/"/>
+      <filelist files="README.markdown,LICENSE"/>
     </jar>
+
+
   </target>
 
 
