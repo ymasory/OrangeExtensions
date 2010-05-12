@@ -65,5 +65,5 @@ public class FileManager {
     public static void revealInFinder(File file) throws FileNotFoundException {}
 
     /** Added 10.6 Update 1 and 10.5 Update 5 */
-    public void moveToTrash(File file) FileNotFoundException {}
+    public static void moveToTrash(File file) throws FileNotFoundException {}
 }
