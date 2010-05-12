@@ -1,5 +1,6 @@
 package com.apple.eio;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
