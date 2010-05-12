@@ -35,15 +35,35 @@
     <h1>OrangeExtensions</h1>
 
     <div class="description">
-      A pluggable jar containing stubs for the Apple Java Extensions, updated for Java 5. 
+      A pluggable jar containing stubs for the Apple Java Extensions, updated for Java 5 & 6. 
     </div>
 
 
     <h2>Overview</h2>
-    <p>Apple's <a href="http://developer.apple.com/mac/library/samplecode/AppleJavaExtensions/Introduction/Intro.html">official jar</a> of Java extension stubs allows you to compile projects that use Apple Java Extensions on platforms other than Mac. Unfortunately, their jar file is for Java 4 only, and has not been updated for new functions like <tt>setDockImage()</tt>. Also, Apple does not provide source code, so it can be difficult to combine with copyleft code. I have updated their jar to the <a href="http://developer.apple.com/mac/library/documentation/Java/Reference/1.5.0/appledoc/api/overview-summary.html">latest specification</a> and included source code. Just drop it in your classpath and you're good to go!</p>
+    <p>Apple's <a href="http://developer.apple.com/mac/library/samplecode/AppleJavaExtensions/Introduction/Intro.html">official jar</a> of Java extension stubs allows you to compile projects that use Apple Java Extensions on platforms other than Mac. Unfortunately, their jar file is for Java 4 only, and has not been updated for Apple's new extensions. I have updated their jar to the latest specification. Just drop it in your classpath and you're good to go!</p>
+
+    <h2>Features</h2>
+    <p><ul>
+        <li>Allows you to compile Apple Java Extensions on Windows, Linux, and others.</li>
+        <li>Supports new methods like <tt>setDockImage()</tt> <a href="http://developer.apple.com/mac/library/documentation/Java/Reference/1.5.0/appledoc/api/overview-summary.html">added for Java 5</a>.</li>
+        <li>Supports little-known extensions like <tt>revealInFinder()</tt> <a href="http://developer.apple.com/mac/library/releasenotes/CrossPlatform/JavaSnowLeopardUpdate1LeopardUpdate6RN/NewandNoteworthy/NewandNoteworthy.html">added for Java 5 update 6 and Java 6 update 1</a></li>
+        <li>Includes source code (unlike official jar), released under permissive BSD license.</li>
+    </ul></p>
 
     <h2>Download</h2>
     <p>Please visit the <a href="http://github.com/ymasory/OrangeExtensions/downloads">download page</a>.<br/>      </p>
+
+    <h2>Contributors</h2>
+    <p><ul>
+        <li>Kai-Holger Brassel found a critical typo in a method stub, and pointed out the new methods added in Java 5 update 6 and Java 6 update 1</li>
+    </ul></p>
+
+    <h2>Release History</h2>
+    <p><ul>
+        <li>v1.0 - add Java 5 update 6 and Java 6 update 1 methods</li>
+        <li>v0.9 - correct typo in <tt>com.apple.eio.FileManager.getPathToApplicationBuldle()</tt> signature</li>
+        <li>v0.8 - first release</li>
+    </p></ul>
 
     <h2>Source Code</h2>
     <p>
