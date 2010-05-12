@@ -60,4 +60,10 @@ public class FileManager {
     public static void setFileType(String fileName, int creator) throws IOException {}
 
     public static void setFileTypeAndCreator(String fileName, int type, int creator) throws IOException {}
+
+    /** Added 10.6 Update 1 and 10.5 Update 5 */
+    public static void revealInFinder(File file) throws FileNotFoundException {}
+
+    /** Added 10.6 Update 1 and 10.5 Update 5 */
+    public void moveToTrash(File file) FileNotFoundException {}
 }
