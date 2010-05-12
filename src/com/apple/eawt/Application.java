@@ -4,6 +4,8 @@ import java.awt.Image;
 import java.awt.Point;
 import java.awt.PopupMenu;
 
+import javax.swing.JMenuBar;
+
 public class Application {
 	
 	public Application() {System.err.println("You are using the dummy jar!");}
@@ -64,4 +66,13 @@ public class Application {
     public void setEnabledAboutMenu(boolean enable) {}
 
     public void setEnabledPreferencesMenu(boolean enable) {}
+
+    /** Added 10.6 Update 1 and 10.5 Update 5 */
+    public void requestForeground(boolean bln) {}
+
+    /** Added 10.6 Update 1 and 10.5 Update 5 */
+    public void requestUserAttention(boolean bln) {}
+
+    /** Added 10.6 Update 1 and 10.5 Update 5 */
+    public void setDefaultMenuBar(JMenuBar jmb) {}
 }
