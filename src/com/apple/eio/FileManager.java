@@ -50,6 +50,7 @@ public class FileManager {
         return null;
     }
 
+    @Deprecated
     public static void openURL(String url) throws IOException {}
     
     public static int OSTypeToInt(String type) {
