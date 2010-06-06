@@ -2,7 +2,9 @@ package com.apple.eawt.event;
 
 import javax.swing.JComponent;
 
-/** Java for Mac OS X 10.5 Update 7, Java for Mac OS X 10.6 Update 2 */
+/** 
+ * @Since 10.5 Update 7 and 10.6 Update 2
+ */
 public final class GestureUtilities {
     
     public static void addGestureListenerTo(JComponent component, GestureListener listener) {}
