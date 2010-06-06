@@ -42,13 +42,17 @@
 
 
     <h2>Overview</h2>
-    <p>Apple's <a href="http://developer.apple.com/mac/library/samplecode/AppleJavaExtensions/Introduction/Intro.html">official jar</a> of Java extension stubs allows you to compile projects that use Apple Java Extensions on platforms other than Mac. Unfortunately, their jar file is for Java 4 only, and has not been updated for Apple's new extensions. I have updated their jar to the latest specification. Just drop it in your classpath and you're good to go!</p>
+    <p>Apple's <a href="http://developer.apple.com/mac/library/samplecode/AppleJavaExtensions/Introduction/Intro.html">official jar</a> of Java extension stubs allows you to compile projects that use Apple Java Extensions on platforms other than Mac. <strike>Unfortunately, their jar file is for Java 4 only, and has not been updated for Apple's new extensions. I have updated their jar to the latest specification.</strike> Just drop it in your classpath and you're good to go!<b></p>
+
+    <p>Update:</b> one month after the first release of OrangeExtensions, Apple finally updated its jar and online documentation! At this point the main benefits of using OrangeExtensions are that source code is provided, and Maven integration is coming. Plus there's no guarantee Apple will keep its jar up to date after letting it sit for 6 years. </p>
 
     <h2>Features</h2>
     <p><ul>
         <li>Allows you to compile Apple Java Extensions on Windows, Linux, and others.</li>
+        <li>Supports multi-touch gesture methods added for <a href="http://developer.apple.com/mac/library/releasenotes/CrossPlatform/JavaSnowLeopardUpdate2LeopardUpdate7RN/Introduction/Introduction.html">Java 5 update 7 and Java 6 update 2</a>.</li>
         <li>Supports new methods like <tt>setDockImage()</tt> <a href="http://developer.apple.com/mac/library/documentation/Java/Reference/1.5.0/appledoc/api/overview-summary.html">added for Java 5</a>.</li>
-        <li>Supports little-known extensions like <tt>revealInFinder()</tt> <a href="http://developer.apple.com/mac/library/releasenotes/CrossPlatform/JavaSnowLeopardUpdate1LeopardUpdate6RN/NewandNoteworthy/NewandNoteworthy.html">added for Java 5 update 6 and Java 6 update 1</a>.</li>
+        <li>Supports methods like <tt>revealInFinder()</tt> <a href="http://developer.apple.com/mac/library/releasenotes/CrossPlatform/JavaSnowLeopardUpdate1LeopardUpdate6RN/NewandNoteworthy/NewandNoteworthy.html">added for Java 5 update 6 and Java 6 update 1</a>.</li>
+        <li>Supports multi-touch gesture methods added for Java 5 update 7 and Java 6 update 2.</li>
         <li>Includes source code (unlike official jar), released under permissive BSD license.</li>
     </ul></p>
 
@@ -57,12 +61,13 @@
 
     <h2>Contributors</h2>
     <p><ul>
-        <li>Kai-Holger Brassel found a critical typo in a method stub, and pointed out the new methods added in Java 5 update 6 and Java 6 update 1.</li>
+        <li>Kai-Holger Brassel found a critical typo in a method stub, and kept the project up to date with news of new releases of Mac Java.</li>
         <li>Felice Ford created the logo, released <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a>.</li>
     </ul></p>
 
     <h2>Release History</h2>
     <p><ul>
+        <li>v1.1 - add Java 5 update 7 and Java 6 update 2 methods</li>
         <li>v1.0 - add Java 5 update 6 and Java 6 update 1 methods</li>
         <li>v0.9 - correct typo in <tt>com.apple.eio.FileManager.getPathToApplicationBundle()</tt> signature</li>
         <li>v0.8 - first release</li>
