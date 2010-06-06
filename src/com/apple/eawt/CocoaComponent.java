@@ -2,6 +2,7 @@ package com.apple.eawt;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
+import java.awt.Graphics;
 
 public abstract class CocoaComponent extends Canvas {
 	
