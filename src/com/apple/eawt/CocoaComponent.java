@@ -15,6 +15,12 @@ public abstract class CocoaComponent extends Canvas {
     }
 
     @Override
+    public void update(Graphics g) {}
+
+    @Override
+    public void paint(Graphics g) {}
+
+    @Override
 	public abstract Dimension getMaximumSize();
 
     @Override
