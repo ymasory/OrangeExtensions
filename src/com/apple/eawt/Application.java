@@ -7,7 +7,8 @@ import java.awt.PopupMenu;
 import javax.swing.JMenuBar;
 
 public class Application {
-	
+    
+    @Deprecated
 	public Application() {System.err.println("You are using the dummy jar!");}
 
     public void addAboutMenuItem() {}
@@ -67,12 +68,18 @@ public class Application {
 
     public void setEnabledPreferencesMenu(boolean enable) {}
 
-    /** Added 10.6 Update 1 and 10.5 Update 5 */
-    public void requestForeground(boolean bln) {}
+    /** 
+     * @Since 10.6 Update 1 and 10.5 Update 5 
+     */
+    public void requestForeground(boolean allWindows) {}
 
-    /** Added 10.6 Update 1 and 10.5 Update 5 */
-    public void requestUserAttention(boolean bln) {}
+    /** 
+     * @Since 10.6 Update 1 and 10.5 Update 5 
+     */
+    public void requestUserAttention(boolean critical) {}
 
-    /** Added 10.6 Update 1 and 10.5 Update 5 */
-    public void setDefaultMenuBar(JMenuBar jmb) {}
+    /** 
+     * @Since 10.6 Update 1 and 10.5 Update 5 
+     */
+    public void setDefaultMenuBar(JMenuBar menuBar) {}
 }
