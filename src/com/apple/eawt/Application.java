@@ -11,10 +11,13 @@ public class Application {
     @Deprecated
 	public Application() {System.err.println("You are using the dummy jar!");}
 
+    @Deprecated
     public void addAboutMenuItem() {}
 
+    @Deprecated
     public void addApplicationListener(ApplicationListener listener) {}
 
+    @Deprecated
     public void addPreferencesMenuItem() {}        
 
     public static Application getApplication() {
@@ -29,10 +32,12 @@ public class Application {
     	return null;
     }
 
+    @Deprecated
     public boolean getEnabledAboutMenu() {
         return false;
     }
 
+    @Deprecated
     public boolean getEnabledPreferencesMenu() {
         return false;
     }
@@ -42,20 +47,24 @@ public class Application {
         return null;
     }
 
+    @Deprecated
     public boolean isAboutMenuItemPresent() {
         return false;
     }
 
+    @Deprecated
     public boolean isPreferencesMenuItemPresent() {
         return false;
     }
     
     public void openHelpViewer() {}
 
+    @Deprecated
     public void removeAboutMenuItem() {}
 
     public void removeApplicationListener(ApplicationListener listener) {}
 
+    @Deprecated
     public void removePreferencesMenuItem() {}
     
     public void setDockIconBadge(String badge) {}
@@ -64,8 +73,10 @@ public class Application {
     
     public void setDockMenu(PopupMenu menu) {}
 
+    @Deprecated
     public void setEnabledAboutMenu(boolean enable) {}
 
+    @Deprecated
     public void setEnabledPreferencesMenu(boolean enable) {}
 
     /** 
