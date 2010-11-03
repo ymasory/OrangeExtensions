@@ -17,8 +17,23 @@ public class Application {
     @Deprecated
     public void addApplicationListener(ApplicationListener listener) {}
 
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void addAppEventListener(AppEventListener listener) {}
+
     @Deprecated
     public void addPreferencesMenuItem() {}        
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void disableSuddenTermination() {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void enableSuddenTermination() {}
 
     public static Application getApplication() {
         return null;
@@ -62,6 +77,11 @@ public class Application {
     @Deprecated
     public void removeAboutMenuItem() {}
 
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void removeAppEventListener(AppEventListener listener) {}
+
     public void removeApplicationListener(ApplicationListener listener) {}
 
     @Deprecated
@@ -89,8 +109,68 @@ public class Application {
      */
     public void requestUserAttention(boolean critical) {}
 
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setAboutHandler(AboutHandler aboutHandler) {}
+
     /** 
      * @Since 10.6 Update 1 and 10.5 Update 5 
      */
     public void setDefaultMenuBar(JMenuBar menuBar) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setOpenFileHandler(OpenFilesHandler openFileHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setOpenURIHandler(OpenURIHandler openURIHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setPreferencesHandler(PreferencesHandler preferencesHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setPrintFileHandler(PrintFilesHandler printFileHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setAboutHandler(AboutHandler aboutHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setOpenFileHandler(OpenFilesHandler openFileHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setOpenURIHandler(OpenURIHandler openURIHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setPrintFileHandler(PrintFilesHandler printFileHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setPreferencesHandler(PreferencesHandler preferencesHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setQuitHandler(QuitHandler quitHandler) {}
+
+    /**
+     * @Since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setQuitStrategy(QuitStrategy strategy) {}
 }
