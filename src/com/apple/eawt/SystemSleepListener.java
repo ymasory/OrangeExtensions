@@ -1,5 +1,6 @@
 package com.apple.eawt;
 
+/** @Since 10.6 Update 3 and 10.5 Update 8 */
 public interface SystemSleepListener extends AppEventListener {
     public void systemAboutToSleep(AppEvent.SystemSleepEvent e);
     public void systemAweoke(AppEvent.SystemSleepEvent e);
