@@ -2,6 +2,7 @@ package com.apple.eawt;
 
 import java.util.EventObject;
 
+@Deprecated
 public class ApplicationEvent extends EventObject {
 
     ApplicationEvent(Object source) {
@@ -12,13 +13,16 @@ public class ApplicationEvent extends EventObject {
         super(source);
     }
 
+    @Deprecated
 	public String getFilename() {
         return null;
     }
 
+    @Deprecated
     public boolean isHandled() {
         return false;
     }
 
+    @Deprecated
     public void setHandled(boolean state) {}
 }
