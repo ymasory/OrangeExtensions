@@ -2,21 +2,21 @@ package com.apple.eawt;
 
 import java.util.EventListener;
 
-@deprecated
+@Deprecated
 public interface ApplicationListener extends EventListener {
 
-    @deprecated
+    @Deprecated
     public void handleAbout(ApplicationEvent event);
-    @deprecated
+    @Deprecated
     public void handleOpenApplication(ApplicationEvent event);
-    @deprecated
+    @Deprecated
     public void handleOpenFile(ApplicationEvent event);
-    @deprecated
+    @Deprecated
     public void handlePreferences(ApplicationEvent event);
-    @deprecated
+    @Deprecated
     public void handlePrintFile(ApplicationEvent event);
-    @deprecated
+    @Deprecated
     public void handleQuit(ApplicationEvent event);
-    @deprecated
+    @Deprecated
     public void handleReOpenApplication(ApplicationEvent event);
 }
