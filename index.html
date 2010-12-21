@@ -42,9 +42,7 @@
 
 
     <h2>Overview</h2>
-    <p>Apple's <a href="http://developer.apple.com/mac/library/samplecode/AppleJavaExtensions/Introduction/Intro.html">official jar</a> of Java extension stubs allows you to compile projects that use Apple Java Extensions on platforms other than Mac. <strike>Unfortunately, their jar file is for Java 4 only, and has not been updated for Apple's new extensions. I have updated their jar to the latest specification.</strike> Just drop it in your classpath and you're good to go!<b></p>
-
-    <p>Update:</b> one month after the first release of OrangeExtensions, Apple finally updated its jar and online documentation! At this point the main benefit of using OrangeExtensions is that source code is provided. Plus there's no guarantee Apple will keep its jar up-to-date after letting it sit for 6 years. Lastly, Maven integration is on the way, so check back.</p>
+    <p>Apple's <a href="http://developer.apple.com/mac/library/samplecode/AppleJavaExtensions/Introduction/Intro.html">official jar</a> of Java extension stubs allows you to compile projects that use Apple Java Extensions on platforms other than Mac. Unfortunately, Apple does not keep its stubs jar up to date.
 
     <h2>Features</h2>
     <p><ul>
@@ -52,6 +50,7 @@
         <li>Supports new methods like <tt>setDockImage()</tt> <a href="http://developer.apple.com/mac/library/documentation/Java/Reference/1.5.0/appledoc/api/overview-summary.html">added for Java 5</a>.</li>
         <li>Supports methods like <tt>revealInFinder()</tt> <a href="http://developer.apple.com/mac/library/releasenotes/CrossPlatform/JavaSnowLeopardUpdate1LeopardUpdate6RN/NewandNoteworthy/NewandNoteworthy.html">added for Java 5 update 6 and Java 6 update 1</a>.</li>
         <li>Supports multi-touch gesture methods added for <a href="http://developer.apple.com/mac/library/releasenotes/CrossPlatform/JavaSnowLeopardUpdate2LeopardUpdate7RN/Introduction/Introduction.html">Java 5 update 7 and Java 6 update 2</a>.</li>
+        <li>Supports the new eawt and exit handling added for <a href="http://developer.apple.com/library/mac/#releasenotes/Java/JavaSnowLeopardUpdate3LeopardUpdate8RN/NewandNoteworthy/NewandNoteworthy.html">Java 5 Update 8 and Java 6 Update 3</a>.
         <li>Includes source code (unlike official jar), released under permissive BSD license.</li>
     </ul></p>
 
@@ -66,6 +65,7 @@
 
     <h2>Release History</h2>
     <p><ul>
+        <li>v1.2 - add Java 5 update 8 and Java 6 update 3 methods</li>
         <li>v1.1 - add Java 5 update 7 and Java 6 update 2 methods</li>
         <li>v1.0 - add Java 5 update 6 and Java 6 update 1 methods</li>
         <li>v0.9 - correct typo in <tt>com.apple.eio.FileManager.getPathToApplicationBundle()</tt> signature</li>
