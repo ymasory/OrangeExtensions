@@ -1,5 +1,5 @@
 # OrangeExtensions #
-## A pluggable jar for the Apple Java Extensions, updated for Java 5 & 6##
+## A pluggable jar for the Apple Java Extensions, updated for Java 5 &  6##
 
 Please see the [project homepage](http://ymasory.github.com/OrangeExtensions/) for more information.
 
@@ -16,3 +16,19 @@ $ sbt
 
 Your jar is in `target/orange-extensions-x.x.x.jar`, where `x.x.x` is the version number.
 
+## Install ##
+
+### Automatically ###
+OrangeExtensions is hosted on [Maven Central](http://central.maven.org/maven2/com/yuvimasory/orange-extensions/).
+Add this to your pom.xml:
+
+```xml
+<dependency>
+  <groupId>com.yuvimasory</groupId>
+  <artifactId>orange-extensions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+### Manually ###
+Build the jar with the instructions above, then drop the resulting jar in your classpath.
