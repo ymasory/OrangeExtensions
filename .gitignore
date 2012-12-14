@@ -8,6 +8,4 @@ out
 err
 
 target/
-lib_managed/
-src_managed/
-project/boot/
+/.lib/
