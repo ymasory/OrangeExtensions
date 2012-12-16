@@ -39,7 +39,7 @@ pomExtra := (
   <url>http://ymasory.github.com/OrangeExtensions/</url>
   <licenses>
     <license>
-      <name>LICENSE NAME</name>
+      <name>BSD</name>
       <url>https://github.com/ymasory/OrangeExtensions/blob/master/LICENSE</url>
       <distribution>repo</distribution>
     </license>
