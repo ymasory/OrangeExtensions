@@ -1,4 +1,7 @@
 # OrangeExtensions #
+
+[![Build Status](http://ci.yuvimasory.com/job/OrangeExtensions/badge/icon)](http://ci.yuvimasory.com/job/OrangeExtensions/)
+
 ## A pluggable jar for the Apple Java Extensions, updated for Java 5 &  6##
 
 Please see the [project homepage](http://ymasory.github.com/OrangeExtensions/) for more information.
