@@ -1,4 +1,4 @@
-xname := "orange-extensions"
+name := "orange-extensions"
 
 organization := "com.yuvimasory"
 
