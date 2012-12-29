@@ -1,8 +1,8 @@
-name := "orange-extensions"
+xname := "orange-extensions"
 
 organization := "com.yuvimasory"
 
-version := "1.0.0"
+version := "1.0.1"
 
 description := "A pluggable jar containing stubs for the Apple Java Extensions, updated for Java 5 & 6"
 
