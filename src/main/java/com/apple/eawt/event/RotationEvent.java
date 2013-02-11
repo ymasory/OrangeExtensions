@@ -1,7 +1,7 @@
 package com.apple.eawt.event;
 
 /** 
- * @Since 10.5 Update 7 and Java for Mac OS X 10.6 Update 2
+ * @since 10.5 Update 7 and Java for Mac OS X 10.6 Update 2
  */
 public class RotationEvent extends GestureEvent {
     
