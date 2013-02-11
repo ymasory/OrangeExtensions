@@ -13,12 +13,16 @@ javacOptions ++= Seq(
   "-Xlint:deprecation"
 )
 
+javacOptions in doc := Seq()
+
 /* sbt behavior */
 logLevel in compile := Level.Warn
 
 traceLevel := 5
 
 crossPaths := false
+
+autoScalaLibrary := false
 
 /* publishing */
 publishMavenStyle := true
@@ -32,6 +36,8 @@ publishTo <<= version { (v: String) =>
 }
 
 publishArtifact in Test := false
+
+publishArtifact in (Compile, packageDoc) := false
 
 pomIncludeRepository := { _ => false }
 

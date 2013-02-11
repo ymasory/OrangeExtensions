@@ -3,7 +3,7 @@ package com.apple.concurrent;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 
-/** @Since Java for Mac OS X 10.6 Update 2 */
+/** @since Java for Mac OS X 10.6 Update 2 */
 public final class Dispatch {
 
     public static enum Priority {HIGH, LOW, NORMAL}

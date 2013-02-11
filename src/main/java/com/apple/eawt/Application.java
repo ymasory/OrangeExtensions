@@ -9,7 +9,7 @@ import javax.swing.JMenuBar;
 public class Application {
     
     @Deprecated
-	public Application() {System.err.println("You are using the dummy jar!");}
+    public Application() {System.err.println("You are using the dummy jar!");}
 
     @Deprecated
     public void addAboutMenuItem() {}
@@ -18,7 +18,7 @@ public class Application {
     public void addApplicationListener(ApplicationListener listener) {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void addAppEventListener(AppEventListener listener) {}
 
@@ -26,12 +26,12 @@ public class Application {
     public void addPreferencesMenuItem() {}        
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void disableSuddenTermination() {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void enableSuddenTermination() {}
 
@@ -40,7 +40,7 @@ public class Application {
     }
     
     public Image getDockIconImage() {
-    	return null;
+        return null;
     }
     
     public PopupMenu getDockMenu() {
@@ -78,7 +78,7 @@ public class Application {
     public void removeAboutMenuItem() {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void removeAppEventListener(AppEventListener listener) {}
 
@@ -100,48 +100,48 @@ public class Application {
     public void setEnabledPreferencesMenu(boolean enable) {}
 
     /** 
-     * @Since 10.6 Update 1 and 10.5 Update 5 
+     * @since 10.6 Update 1 and 10.5 Update 5 
      */
     public void requestForeground(boolean allWindows) {}
 
     /** 
-     * @Since 10.6 Update 1 and 10.5 Update 5 
+     * @since 10.6 Update 1 and 10.5 Update 5 
      */
     public void requestUserAttention(boolean critical) {}
 
     /** 
-     * @Since 10.6 Update 1 and 10.5 Update 5 
+     * @since 10.6 Update 1 and 10.5 Update 5 
      */
     public void setDefaultMenuBar(JMenuBar menuBar) {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void setOpenURIHandler(OpenURIHandler openURIHandler) {}
 
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void setAboutHandler(AboutHandler aboutHandler) {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void setOpenFileHandler(OpenFilesHandler openFileHandler) {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void setPrintFileHandler(PrintFilesHandler printFileHandler) {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void setPreferencesHandler(PreferencesHandler preferencesHandler) {}
 
     /**
-     * @Since 10.6 Update 3 and 10.5 Update 8
+     * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void setQuitHandler(QuitHandler quitHandler) {}
 }

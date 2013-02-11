@@ -4,7 +4,7 @@ import java.net.URI;
 import java.util.EventObject;
 import java.util.List;
 
-/** @Since 10.6 Update 3 and 10.5 Update 8 */
+/** @since 10.6 Update 3 and 10.5 Update 8 */
 public abstract class AppEvent extends EventObject {
 
     AppEvent() {super(Application.getApplication());}
