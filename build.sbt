@@ -2,7 +2,7 @@ name := "orange-extensions"
 
 organization := "com.yuvimasory"
 
-version := "1.0.3-SNAPSHOT"
+version := "1.3.1-SNAPSHOT"
 
 description := "A pluggable jar containing stubs for the Apple Java Extensions, updated for Java 5 & 6"
 
