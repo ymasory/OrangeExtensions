@@ -22,7 +22,8 @@ Your jar is in `target/orange-extensions-x.x.x.jar`, where `x.x.x` is the versio
 ## Install ##
 
 ### Automatically ###
-OrangeExtensions is hosted on [Maven Central](http://central.maven.org/maven2/com/yuvimasory/orange-extensions/).
+OrangeExtensions is hosted on [Maven Central](http://central.maven.org/maven2/com/yuvimasory/orange-extensions/)
+via synchronization from [Sonatype](https://oss.sonatype.org/content/repositories/releases/com/yuvimasory/orange-extensions/).
 Add this to your pom.xml:
 
 ```xml
