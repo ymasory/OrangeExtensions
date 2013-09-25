@@ -144,4 +144,11 @@ public class Application {
      * @since 10.6 Update 3 and 10.5 Update 8
      */
     public void setQuitHandler(QuitHandler quitHandler) {}
+    
+    /**
+     * Sets the default strategy used to quit this application.
+     * 
+     * @since 10.6 Update 3 and 10.5 Update 8
+     */
+    public void setQuitStrategy(QuitStrategy strategy) {}
 }
