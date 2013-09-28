@@ -82,7 +82,8 @@ public class Application {
      */
     public void removeAppEventListener(AppEventListener listener) {}
 
-    public void removeApplicationListener(ApplicationListener listener) {}
+    @SuppressWarnings("deprecation")
+	public void removeApplicationListener(ApplicationListener listener) {}
 
     @Deprecated
     public void removePreferencesMenuItem() {}
