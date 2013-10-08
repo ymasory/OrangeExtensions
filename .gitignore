@@ -1,11 +1,9 @@
 .DS_Store
 *~
 .ensime
-.project
-.classpath
 *.class
 out
 err
-
 target/
 /.lib/
+.settings
