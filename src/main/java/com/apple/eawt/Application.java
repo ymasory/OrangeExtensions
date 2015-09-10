@@ -1,147 +1,174 @@
 package com.apple.eawt;
-
+ 
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.PopupMenu;
-
+import java.awt.Window;
 import javax.swing.JMenuBar;
-
-public class Application {
-    
-    @Deprecated
-    public Application() {System.err.println("You are using the dummy jar!");}
-
-    @Deprecated
-    public void addAboutMenuItem() {}
-
-    @Deprecated
-    public void addApplicationListener(ApplicationListener listener) {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void addAppEventListener(AppEventListener listener) {}
-
-    @Deprecated
-    public void addPreferencesMenuItem() {}        
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void disableSuddenTermination() {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void enableSuddenTermination() {}
-
+ 
+public class Application
+{
+    static RuntimeException unimplemented()
+    {
+        return new RuntimeException("Unimplemented");
+    }
+ 
     public static Application getApplication() {
-        return null;
+        throw unimplemented();
     }
-    
-    public Image getDockIconImage() {
-        return null;
-    }
-    
-    public PopupMenu getDockMenu() {
-    	return null;
-    }
-
+ 
     @Deprecated
-    public boolean getEnabledAboutMenu() {
-        return false;
+    public Application() {
+        throw unimplemented();
     }
-
+ 
+    public void addAppEventListener(AppEventListener paramAppEventListener) {
+        throw unimplemented();
+    }
+ 
+    public void removeAppEventListener(AppEventListener paramAppEventListener) {
+        throw unimplemented();
+    }
+ 
+    public void setAboutHandler(AboutHandler paramAboutHandler) {
+        throw unimplemented();
+    }
+ 
+    public void setPreferencesHandler(PreferencesHandler paramPreferencesHandler) {
+        throw unimplemented();
+    }
+ 
+    public void setOpenFileHandler(OpenFilesHandler paramOpenFilesHandler) {
+        throw unimplemented();
+    }
+ 
+    public void setPrintFileHandler(PrintFilesHandler paramPrintFilesHandler) {
+        throw unimplemented();
+    }
+ 
+    public void setOpenURIHandler(OpenURIHandler paramOpenURIHandler) {
+        throw unimplemented();
+    }
+ 
+    public void setQuitHandler(QuitHandler paramQuitHandler) {
+        throw unimplemented();
+    }
+ 
+    public void setQuitStrategy(QuitStrategy paramQuitStrategy) {
+        throw unimplemented();
+    }
+ 
+    public void enableSuddenTermination() {
+        throw unimplemented();
+    }
+ 
+    public void disableSuddenTermination() {
+        throw unimplemented();
+    }
+ 
+    public void requestForeground(boolean paramBoolean) {
+        throw unimplemented();
+    }
+ 
+    public void requestUserAttention(boolean paramBoolean) {
+        throw unimplemented();
+    }
+ 
+    public void openHelpViewer() {
+        throw unimplemented();
+    }
+ 
+    public void setDockMenu(PopupMenu paramPopupMenu) {
+        throw unimplemented();
+    }
+ 
+    public PopupMenu getDockMenu() {
+        throw unimplemented();
+    }
+ 
+    public void setDockIconImage(Image paramImage) {
+        throw unimplemented();
+    }
+ 
+    public Image getDockIconImage() {
+        throw unimplemented();
+    }
+ 
+    public void setDockIconBadge(String paramString) {
+        throw unimplemented();
+    }
+ 
+    public void setDefaultMenuBar(JMenuBar paramJMenuBar) {
+        throw unimplemented();
+    }
+ 
+    public void requestToggleFullScreen(Window paramWindow) {
+        throw unimplemented();
+    }
+ 
+    @Deprecated
+    public void addApplicationListener(ApplicationListener paramApplicationListener)
+    {
+        throw unimplemented();
+    }
+ 
+    @Deprecated
+    public void removeApplicationListener(ApplicationListener paramApplicationListener) {
+        throw unimplemented();
+    }
+ 
+    @Deprecated
+    public void setEnabledPreferencesMenu(boolean paramBoolean) {
+        throw unimplemented();
+    }
+ 
+    @Deprecated
+    public void setEnabledAboutMenu(boolean paramBoolean) {
+        throw unimplemented();
+    }
+ 
     @Deprecated
     public boolean getEnabledPreferencesMenu() {
-        return false;
+        throw unimplemented();
     }
-
+ 
     @Deprecated
-    public static Point getMouseLocationOnScreen() {
-        return null;
+    public boolean getEnabledAboutMenu() {
+        throw unimplemented();
     }
-
+ 
     @Deprecated
     public boolean isAboutMenuItemPresent() {
-        return false;
+        throw unimplemented();
     }
-
+ 
+    @Deprecated
+    public void addAboutMenuItem() {
+        throw unimplemented();
+    }
+ 
+    @Deprecated
+    public void removeAboutMenuItem() {
+        throw unimplemented();
+    }
+ 
     @Deprecated
     public boolean isPreferencesMenuItemPresent() {
-        return false;
+        throw unimplemented();
     }
-    
-    public void openHelpViewer() {}
-
+ 
     @Deprecated
-    public void removeAboutMenuItem() {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void removeAppEventListener(AppEventListener listener) {}
-
-    public void removeApplicationListener(ApplicationListener listener) {}
-
+    public void addPreferencesMenuItem() {
+        throw unimplemented();
+    }
+ 
     @Deprecated
-    public void removePreferencesMenuItem() {}
-    
-    public void setDockIconBadge(String badge) {}
-    
-    public void setDockIconImage(Image image) {}
-    
-    public void setDockMenu(PopupMenu menu) {}
-
+    public void removePreferencesMenuItem() {
+        throw unimplemented();
+    }
+ 
     @Deprecated
-    public void setEnabledAboutMenu(boolean enable) {}
-
-    @Deprecated
-    public void setEnabledPreferencesMenu(boolean enable) {}
-
-    /** 
-     * @since 10.6 Update 1 and 10.5 Update 5 
-     */
-    public void requestForeground(boolean allWindows) {}
-
-    /** 
-     * @since 10.6 Update 1 and 10.5 Update 5 
-     */
-    public void requestUserAttention(boolean critical) {}
-
-    /** 
-     * @since 10.6 Update 1 and 10.5 Update 5 
-     */
-    public void setDefaultMenuBar(JMenuBar menuBar) {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void setOpenURIHandler(OpenURIHandler openURIHandler) {}
-
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void setAboutHandler(AboutHandler aboutHandler) {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void setOpenFileHandler(OpenFilesHandler openFileHandler) {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void setPrintFileHandler(PrintFilesHandler printFileHandler) {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void setPreferencesHandler(PreferencesHandler preferencesHandler) {}
-
-    /**
-     * @since 10.6 Update 3 and 10.5 Update 8
-     */
-    public void setQuitHandler(QuitHandler quitHandler) {}
+    public static Point getMouseLocationOnScreen() {
+        throw unimplemented();
+    }
 }

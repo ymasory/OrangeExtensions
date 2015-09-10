@@ -3,14 +3,39 @@ package com.apple.concurrent;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 
-/** @since Java for Mac OS X 10.6 Update 2 */
-public final class Dispatch {
+public final class Dispatch
+{
+    static RuntimeException unimplemented()
+    {
+        return new RuntimeException("Unimplemented");
+    }
 
-    public static enum Priority {HIGH, LOW, NORMAL}
+    public static Dispatch getInstance() {
+        throw unimplemented();
+    }
 
-    public ExecutorService createExecutor(String label) {return null;}
-    public Executor getAsyncExecutor(Priority priority) {return null;}
-    public Executor getBlockingMainQueueExecutor() {return null;}
-    public Executor getNonBlockingMainQueueExecutor() {return null;}
-    public static Dispatch getInstance() {return null;}
+    public Executor getAsyncExecutor(Priority paramPriority) {
+        throw unimplemented();
+    }
+
+    public ExecutorService createSerialExecutor(String paramString) {
+        throw unimplemented();
+    }
+
+    public Executor getNonBlockingMainQueueExecutor() {
+        throw unimplemented();
+    }
+
+    public Executor getBlockingMainQueueExecutor() {
+        throw unimplemented();
+    }
+
+    public static enum Priority
+    {
+        LOW(-2), NORMAL(0), HIGH(2);
+
+        private Priority(int paramInt)
+        {
+        }
+    }
 }

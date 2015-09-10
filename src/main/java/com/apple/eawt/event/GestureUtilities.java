@@ -1,12 +1,23 @@
 package com.apple.eawt.event;
-
+ 
 import javax.swing.JComponent;
-
-/** 
- * @since 10.5 Update 7 and 10.6 Update 2
- */
-public final class GestureUtilities {
-    
-    public static void addGestureListenerTo(JComponent component, GestureListener listener) {}
-    public static void removeGestureListenerFrom(JComponent component, GestureListener listener) {}
+ 
+public final class GestureUtilities
+{
+    static RuntimeException unimplemented()
+    {
+        return new RuntimeException("Unimplemented");
+    }
+ 
+    GestureUtilities() {
+        unimplemented();
+    }
+ 
+    public static void addGestureListenerTo(JComponent paramJComponent, GestureListener paramGestureListener) {
+        unimplemented();
+    }
+ 
+    public static void removeGestureListenerFrom(JComponent paramJComponent, GestureListener paramGestureListener) {
+        unimplemented();
+    }
 }

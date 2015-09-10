@@ -1,6 +1,6 @@
 package com.apple.eawt;
 
-/** @since 10.6 Update 3 and 10.5 Update 8 */
-public interface OpenFilesHandler {
-    public void openFiles(AppEvent.OpenFilesEvent e);
+public abstract interface OpenFilesHandler
+{
+    public abstract void openFiles(AppEvent.OpenFilesEvent paramOpenFilesEvent);
 }
