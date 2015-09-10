@@ -1,8 +1,8 @@
 package com.apple.eawt;
 
-/** @since 10.6 Update 3 and 10.5 Update 8 */
-public interface AppHiddenListener extends AppEventListener {
+public abstract interface AppHiddenListener extends AppEventListener
+{
+    public abstract void appHidden(AppEvent.AppHiddenEvent paramAppHiddenEvent);
 
-    public void appHidden(AppEvent.AppHiddenEvent e);
-    public void appUnhidden(AppEvent.AppHiddenEvent e);
+    public abstract void appUnhidden(AppEvent.AppHiddenEvent paramAppHiddenEvent);
 }

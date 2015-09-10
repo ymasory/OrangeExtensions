@@ -1,29 +1,33 @@
 package com.apple.eawt;
-
+ 
 @Deprecated
-public class ApplicationAdapter implements ApplicationListener {
-
+public class ApplicationAdapter
+    implements ApplicationListener
+{
+    public ApplicationAdapter()
+    {
+        throw Application.unimplemented();
+    }
     @Deprecated
-    public ApplicationAdapter() {}
-
+    public void handleAbout(ApplicationEvent paramApplicationEvent) {
+        throw Application.unimplemented();
+    }
     @Deprecated
-    public void handleAbout(ApplicationEvent event) {}
-
+    public void handleOpenApplication(ApplicationEvent paramApplicationEvent) { throw Application.unimplemented(); } 
     @Deprecated
-    public void handleOpenApplication(ApplicationEvent event) {}
-
+    public void handleOpenFile(ApplicationEvent paramApplicationEvent) {
+        throw Application.unimplemented();
+    }
     @Deprecated
-    public void handleOpenFile(ApplicationEvent event) {}
-
+    public void handlePreferences(ApplicationEvent paramApplicationEvent) { throw Application.unimplemented(); } 
     @Deprecated
-    public void handlePreferences(ApplicationEvent event) {}
-
+    public void handlePrintFile(ApplicationEvent paramApplicationEvent) {
+        throw Application.unimplemented();
+    }
     @Deprecated
-    public void handlePrintFile(ApplicationEvent event) {}
-
+    public void handleQuit(ApplicationEvent paramApplicationEvent) { throw Application.unimplemented(); } 
     @Deprecated
-    public void handleQuit(ApplicationEvent event) {}
-
-    @Deprecated
-    public void handleReOpenApplication(ApplicationEvent event) {}
+    public void handleReOpenApplication(ApplicationEvent paramApplicationEvent) {
+        throw Application.unimplemented();
+    }
 }

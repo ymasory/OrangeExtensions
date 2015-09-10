@@ -1,34 +1,33 @@
 package com.apple.eawt;
-
+ 
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Graphics;
-
-public abstract class CocoaComponent extends Canvas {
-	
-	public CocoaComponent() {}
-
-	@Deprecated
+ 
+public abstract class CocoaComponent extends Canvas
+{
     public abstract int createNSView();
-
-    public long createNSViewLong() {
-        return 0L;
+ 
+    public void update(Graphics paramGraphics)
+    {
+        throw Application.unimplemented();
     }
-
-    @Override
-    public void update(Graphics g) {}
-
-    @Override
-    public void paint(Graphics g) {}
-
-    @Override
-	public abstract Dimension getMaximumSize();
-
-    @Override
-	public abstract Dimension getMinimumSize();
-
-    @Override
-	public abstract Dimension getPreferredSize();
-    
-    public final void sendMessage(int messageID, Object message) {}
+ 
+    public void paint(Graphics paramGraphics) {
+        throw Application.unimplemented();
+    }
+ 
+    public long createNSViewLong() {
+        throw Application.unimplemented();
+    }
+ 
+    public final void sendMessage(int paramInt, Object paramObject) {
+        throw Application.unimplemented();
+    }
+ 
+    public abstract Dimension getMaximumSize();
+ 
+    public abstract Dimension getMinimumSize();
+ 
+    public abstract Dimension getPreferredSize();
 }

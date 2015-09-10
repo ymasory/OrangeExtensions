@@ -1,28 +1,33 @@
 package com.apple.eawt;
-
+ 
 import java.util.EventObject;
-
+ 
 @Deprecated
-public class ApplicationEvent extends EventObject {
-
-    ApplicationEvent(Object source) {
-        super(source);
+public class ApplicationEvent extends EventObject
+{
+    ApplicationEvent(Object paramObject)
+    {
+        super(paramObject);
+        throw Application.unimplemented();
     }
-
-    ApplicationEvent(Object source, String str) {
-        super(source);
+ 
+    ApplicationEvent(Object paramObject, String paramString) {
+        super(paramObject);
+        throw Application.unimplemented();
     }
-
-    @Deprecated
-	public String getFilename() {
-        return null;
-    }
-
+ 
     @Deprecated
     public boolean isHandled() {
-        return false;
+        throw Application.unimplemented();
     }
-
+ 
     @Deprecated
-    public void setHandled(boolean state) {}
+    public void setHandled(boolean paramBoolean) {
+        throw Application.unimplemented();
+    }
+ 
+    @Deprecated
+    public String getFilename() {
+        throw Application.unimplemented();
+    }
 }

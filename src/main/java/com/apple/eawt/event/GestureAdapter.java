@@ -1,18 +1,17 @@
 package com.apple.eawt.event;
-
-/** 
- * @since 10.5 Update 7 and 10.6 Update 2
- */
-public abstract class GestureAdapter implements GesturePhaseListener, MagnificationListener, RotationListener, SwipeListener {
-    
-    public GestureAdapter() {}
-
-    public void gestureBegan(GesturePhaseEvent e) {}
-    public void gestureEnded(GesturePhaseEvent e) {}
-    public void magnify(MagnificationEvent e) {}
-    public void rotate(RotationEvent e) {}
-    public void swipedDown(SwipeEvent e) {}
-    public void swipedLeft(SwipeEvent e) {}
-    public void swipedRight(SwipeEvent e) {}
-    public void swipedUp(SwipeEvent e) {}    
+ 
+public abstract class GestureAdapter
+    implements GesturePhaseListener, MagnificationListener, RotationListener, SwipeListener
+{
+    public void gestureBegan(GesturePhaseEvent paramGesturePhaseEvent)
+    {
+        GestureUtilities.unimplemented(); } 
+    public void gestureEnded(GesturePhaseEvent paramGesturePhaseEvent) { GestureUtilities.unimplemented(); } 
+    public void magnify(MagnificationEvent paramMagnificationEvent) { GestureUtilities.unimplemented(); } 
+    public void rotate(RotationEvent paramRotationEvent) { GestureUtilities.unimplemented(); } 
+    public void swipedDown(SwipeEvent paramSwipeEvent) { GestureUtilities.unimplemented(); } 
+    public void swipedLeft(SwipeEvent paramSwipeEvent) { GestureUtilities.unimplemented(); } 
+    public void swipedRight(SwipeEvent paramSwipeEvent) { GestureUtilities.unimplemented(); } 
+    public void swipedUp(SwipeEvent paramSwipeEvent) { GestureUtilities.unimplemented(); }
+ 
 }
