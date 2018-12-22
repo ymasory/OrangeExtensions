@@ -6,11 +6,11 @@ import java.io.IOException;
 
 public class FileManager {
 	
-	public static final short kOnAppropriateDisk = 0;
-	public static final short kSystemDomain = 0;
-	public static final short kLocalDomain = 0;
-	public static final short kNetworkDomain = 0;
-	public static final short kUserDomain = 0;
+	public static final short kOnAppropriateDisk = -32767;
+	public static final short kSystemDomain = -32766;
+	public static final short kLocalDomain = -32765;
+	public static final short kNetworkDomain = -32764;
+	public static final short kUserDomain = -32763;
 	
 	public FileManager() {}
 
